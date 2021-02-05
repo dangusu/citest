@@ -1,4 +1,4 @@
-CODE_CHANGES = getGitChanges() // a groovy sscript that checks if are changes and return boolean
+//CODE_CHANGES = getGitChanges() // a groovy sscript that checks if are changes and return boolean
 
 
 pipeline {
@@ -15,7 +15,7 @@ pipeline {
       stage("build") {
           when { // executa stageul asta doar WHEN EXPRESSION e true, daca nu, skip
                       expression {
-                          env.BRANCH_NAME=='dev' && CODE_CHANGES == true //code_changes se defineste outside pipeline
+                          env.BRANCH_NAME=='dev' //&& CODE_CHANGES == true //code_changes se defineste outside pipeline
                           }
                     }
           steps {

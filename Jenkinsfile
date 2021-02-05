@@ -59,7 +59,7 @@ pipeline {
                 //dupa STAGES face ALWAYS something
                 echo 'post de always'
             }
-            success { echo 'a ajunsn la success'}
+            success { echo 'a ajuns la success'}
             failure { echo 'a ajuns la failure'}
         }
 	

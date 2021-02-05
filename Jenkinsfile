@@ -57,9 +57,10 @@ pipeline {
         post { // BUILD STATUS or BUILD STATUS CHANGE
             always {
                 //dupa STAGES face ALWAYS something
+                echo 'post de always'
             }
-            success {}
-            failure {}
+            success { echo 'a ajunsn la success'}
+            failure { echo 'a ajuns la failure'}
         }
 	
 

@@ -25,4 +25,14 @@ pipeline {
           }
 	}
       }
+	
+	post { // BUILD STATUS or BUILD STATUS CHANGE
+		always {
+			//dupa STAGES face ALWAYS something
+		}
+		success {}
+		failure {}
+	}	
+	
+
   }

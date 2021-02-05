@@ -33,14 +33,14 @@ pipeline {
             echo 'testing the app'
             echo "testing version ${NEW_VERSION}" //variabilele se scriu in double quotes, var delcar in environment
             echo "testing with ${SERVER_CREDENTIALS}"
-            sh "{SERVER_CREDENTIALS}"
+            pwsh "{SERVER_CREDENTIALS}"
 
             withCredentials([
 
                 usernamePassword(credentials: 'app-pipeline', usernameVariable: USER, passwordVariable:PWD)
                 // takes the crdentials from app-pipelaine si le salveaza in variabila USER si PWD
             ]){
-                sh "some script ${USER} ${PWD}"
+                pwsh "some script ${USER}
             }
 
           }

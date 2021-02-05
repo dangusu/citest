@@ -7,7 +7,7 @@ pipeline {
 
   environment{  //definim env variables aici
         NEW_VERSION = '1.3.0' //se poate calcula, extrasa din cod, am scris direct
-        SERVER_CREDENTIALS = credential('app-pipeline') //plugin de binding de crdentials
+        SERVER_CREDENTIALS = credentials('app-pipeline') //plugin de binding de crdentials
   }
   
   stages {

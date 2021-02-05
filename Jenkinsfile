@@ -26,7 +26,7 @@ pipeline {
        stage("test") {
           when { // executa stageul asta doar WHEN EXPRESSION e true, daca nu, skip
             expression {
-                env.BRANCH_NAME=='dev' || BRANCH_NAME=='master'
+                env.BRANCH_NAME=='main' || BRANCH_NAME=='master'
                 }
           }
           steps {

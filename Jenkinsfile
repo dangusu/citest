@@ -40,7 +40,7 @@ pipeline {
                 usernamePassword(credentials: 'app-pipeline', usernameVariable: USER, passwordVariable:PWD)
                 // takes the crdentials from app-pipelaine si le salveaza in variabila USER si PWD
             ]){
-                pwsh "some script ${USER}
+                pwsh "some script ${USER}"
             }
 
           }

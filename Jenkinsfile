@@ -60,7 +60,7 @@ pipeline {
                 echo 'post de always'
             }
             success { echo 'a ajuns la success'}
-            failure { echo 'a ajuns la failure GOOD PART 2'}
+            failure { echo 'a ajuns la failure GOOD PART 2 ok'}
         }
 	
 
